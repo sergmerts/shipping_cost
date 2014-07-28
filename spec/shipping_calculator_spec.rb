@@ -14,6 +14,12 @@ describe Parcel do
     test_parcel.height.should eq 10
     test_parcel.weight.should eq 10
   end
+
+  it 'should return overall dimensions' do
+    test_parcel = Parcel.new(10,10,10,10)
+    test_parcel.volume.should eq 1000
+  end
+
 end
 
 

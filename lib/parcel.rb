@@ -1,7 +1,6 @@
 # lib/parcel.rb
 
 class Parcel
- attr_reader :length, :width, :height, :weight
 
   def initialize(length, width, height, weight)
     @length = length
@@ -9,4 +8,25 @@ class Parcel
     @height = height
     @weight = weight
   end
+
+  def length
+    @length
+  end
+
+  def width
+    @width
+  end
+
+  def height
+    @height
+  end
+
+  def weight
+    @weight
+  end
+
+  def volume
+    @volume = length*width*height
+  end
+
 end
