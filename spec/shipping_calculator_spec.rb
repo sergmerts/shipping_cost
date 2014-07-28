@@ -6,8 +6,14 @@ describe Parcel do
     test_parcel = Parcel.new(10,10,10,10)
     test_parcel.should be_an_instance_of Parcel
   end
+
+  it 'lets you access the individual properties' do
+    test_parcel = Parcel.new(10,10,10,10)
+    test_parcel.length.should eq 10
+    test_parcel.width.should eq 10
+    test_parcel.height.should eq 10
+    test_parcel.weight.should eq 10
+  end
 end
 
-# describe Task do
-#   it 'print the properties of the parcel' do
 
