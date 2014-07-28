@@ -29,4 +29,7 @@ class Parcel
     @volume = length*width*height
   end
 
+  def cost
+    @cost = volume*weight*0.002
+  end
 end

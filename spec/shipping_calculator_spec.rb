@@ -20,6 +20,10 @@ describe Parcel do
     test_parcel.volume.should eq 1000
   end
 
+  it 'should calculate a cost to ship the package' do
+    test_parcel = Parcel.new(10,10,10,10)
+    test_parcel.cost.should eq 20
+  end
 end
 
 
